@@ -31,3 +31,7 @@ git-go I\'m done coding
 ```
 npm install -g git-go
 ```
+
+### Credit
+
+This is just a nodejs port of @jashkenas' git-go Ruby script.
