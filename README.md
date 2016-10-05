@@ -12,3 +12,10 @@ git push
 
 It is a dangerous practice, but it saves a lot of time. Also it encourages [committing early and often](http://www.databasically.com/2011/03/14/git-commit-early-commit-often/).
 
+### Installation
+
+Just run
+
+```
+npm install -g git-go
+```
