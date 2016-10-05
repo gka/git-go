@@ -14,7 +14,7 @@ It is a dangerous practice, but it saves a lot of time. Also it encourages [comm
 
 ### Usage
 
-It's just git-go COMMITMSG. Note that you don't have to put quotes around the commit message.
+It's really just `git-go COMMITMSG`. Note that you don't have to put quotes around the commit message.
 
 ```
 git-go your commit message goes here

@@ -1,0 +1,96 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/bin/node',
+1 verbose cli   '/usr/local/bin/npm',
+1 verbose cli   'publish',
+1 verbose cli   '--force' ]
+2 info using npm@2.14.12
+3 info using node@v4.2.4
+4 warn using --force I sure hope you know what you are doing.
+5 verbose publish [ '.' ]
+6 silly cache add args [ '.', null ]
+7 verbose cache add spec .
+8 silly cache add parsed spec Result {
+8 silly cache add   raw: '.',
+8 silly cache add   scope: null,
+8 silly cache add   name: null,
+8 silly cache add   rawSpec: '.',
+8 silly cache add   spec: '/Users/205947/nytg/git-go',
+8 silly cache add   type: 'directory' }
+9 verbose addLocalDirectory /Users/205947/.npm/git-go/1.0.1/package.tgz not in flight; packing
+10 verbose tar pack [ '/Users/205947/.npm/git-go/1.0.1/package.tgz',
+10 verbose tar pack   '/Users/205947/nytg/git-go' ]
+11 verbose tarball /Users/205947/.npm/git-go/1.0.1/package.tgz
+12 verbose folder /Users/205947/nytg/git-go
+13 info prepublish git-go@1.0.1
+14 verbose addLocalTarball adding from inside cache /Users/205947/.npm/git-go/1.0.1/package.tgz
+15 silly cache afterAdd git-go@1.0.1
+16 verbose afterAdd /Users/205947/.npm/git-go/1.0.1/package/package.json not in flight; writing
+17 verbose afterAdd /Users/205947/.npm/git-go/1.0.1/package/package.json written
+18 silly publish { name: 'git-go',
+18 silly publish   version: '1.0.1',
+18 silly publish   description: '*git-go* is a short-hand command for doing',
+18 silly publish   main: 'index.js',
+18 silly publish   scripts: { test: 'echo "Error: no test specified" && exit 1' },
+18 silly publish   bin: { 'git-go': './git-go' },
+18 silly publish   repository: { type: 'git', url: 'git+https://github.com/gka/git-go.git' },
+18 silly publish   author: '',
+18 silly publish   license: 'ISC',
+18 silly publish   bugs: { url: 'https://github.com/gka/git-go/issues' },
+18 silly publish   homepage: 'https://github.com/gka/git-go#readme',
+18 silly publish   readme: '# git-go\n\n*git-go* is a short-hand command for doing \n\n```\ngit add -A\ngit add -u\ngit commit -m "SOME MESSAGE"\ngit pull\ngit push\n```\n\nIt is a dangerous practice, but it saves a lot of time. Also it encourages [committing early and often](http://www.databasically.com/2011/03/14/git-commit-early-commit-often/).\n\n### Usage\n\nIt\'s just git-go COMMITMSG. Note that you don\'t have to put quotes around the commit message.\n\n```\ngit-go your commit message goes here\n```\n\nIf you intend to use quotes, you need to escape them using `\\`.\n\n```\ngit-go I\\\'m done coding\n```\n\n### Installation\n\n```\nnpm install -g git-go\n```\n',
+18 silly publish   readmeFilename: 'README.md',
+18 silly publish   gitHead: 'b7f241324d7153a2edd03d041e2704cf5cba35b0',
+18 silly publish   _id: 'git-go@1.0.1',
+18 silly publish   _shasum: '51556bdc811f1e0d8da202c839a8bc3d71640956',
+18 silly publish   _from: '.' }
+19 verbose getPublishConfig undefined
+20 silly mapToRegistry name git-go
+21 silly mapToRegistry using default registry
+22 silly mapToRegistry registry https://registry.npmjs.org/
+23 silly mapToRegistry uri https://registry.npmjs.org/git-go
+24 verbose publish registryBase https://registry.npmjs.org/
+25 silly publish uploading /Users/205947/.npm/git-go/1.0.1/package.tgz
+26 verbose request uri https://registry.npmjs.org/git-go
+27 verbose request sending authorization for write operation
+28 info attempt registry request try #1 at 11:56:27 PM
+29 verbose request using bearer token for auth
+30 verbose request id bae03afe2652f967
+31 http request PUT https://registry.npmjs.org/git-go
+32 http 403 https://registry.npmjs.org/git-go
+33 verbose headers { 'content-type': 'application/json',
+33 verbose headers   'cache-control': 'max-age=300',
+33 verbose headers   'content-length': '95',
+33 verbose headers   'accept-ranges': 'bytes',
+33 verbose headers   date: 'Wed, 05 Oct 2016 21:56:28 GMT',
+33 verbose headers   via: '1.1 varnish',
+33 verbose headers   connection: 'keep-alive',
+33 verbose headers   'x-served-by': 'cache-jfk8132-JFK',
+33 verbose headers   'x-cache': 'MISS',
+33 verbose headers   'x-cache-hits': '0',
+33 verbose headers   'x-timer': 'S1475704587.677205,VS0,VE526',
+33 verbose headers   vary: 'Accept-Encoding' }
+34 verbose request invalidating /Users/205947/.npm/registry.npmjs.org/git-go on PUT
+35 error publish Failed PUT 403
+36 verbose stack Error: "You cannot publish over the previously published version 1.0.1." : git-go
+36 verbose stack     at makeError (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:264:12)
+36 verbose stack     at CachingRegistryClient.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:252:14)
+36 verbose stack     at Request._callback (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:172:14)
+36 verbose stack     at Request.self.callback (/usr/local/lib/node_modules/npm/node_modules/request/request.js:198:22)
+36 verbose stack     at emitTwo (events.js:87:13)
+36 verbose stack     at Request.emit (events.js:172:7)
+36 verbose stack     at Request.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/request/request.js:1082:10)
+36 verbose stack     at emitOne (events.js:82:20)
+36 verbose stack     at Request.emit (events.js:169:7)
+36 verbose stack     at IncomingMessage.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/request/request.js:1009:12)
+37 verbose statusCode 403
+38 verbose pkgid git-go
+39 verbose cwd /Users/205947/nytg/git-go
+40 error Darwin 15.6.0
+41 error argv "/usr/local/bin/node" "/usr/local/bin/npm" "publish" "--force"
+42 error node v4.2.4
+43 error npm  v2.14.12
+44 error code E403
+45 error "You cannot publish over the previously published version 1.0.1." : git-go
+46 error If you need help, you may report this error at:
+46 error     <https://github.com/npm/npm/issues>
+47 verbose exit [ 1, true ]
