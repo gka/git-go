@@ -12,8 +12,15 @@ cmds.push('git commit -m "'+process.argv.slice(2).join(' ')+'"');
 cmds.push('git pull');
 cmds.push('git push');
 
+var beep_on = ['failed to merge', 'automatic merge failed'];
+
 require('child_process').exec(cmds.join(' && '), function(err, stdout, stderr) {
   if (err) console.error(err);
   if (stdout) console.log(stdout);
   if (stderr) console.error(stderr);
+  beep_on.forEach(function(s) {
+    if (stdout.toLowerCase().indexOf(s) > -1) console.log('\u0007');
+  });
 });
+
+
