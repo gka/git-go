@@ -2,8 +2,8 @@
 var cmds = [];
 
 if (process.argv.length < 3) {
-	console.log('You need to provide a commit message required!');
-	process.exit(-1);
+  console.error('Error: Please provide a commit message.');
+  process.exit(-1);
 }
 
 cmds.push('git add -A');
