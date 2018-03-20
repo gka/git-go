@@ -2,12 +2,11 @@
 var cmds = [];
 
 if (process.argv.length < 3) {
-	console.log('You need to provide a commit message required!');
+	console.log('Please provide a ommit message!');
 	process.exit(-1);
 }
 
 cmds.push('git add -A');
-cmds.push('git add -u');
 cmds.push('git commit -m "'+process.argv.slice(2).join(' ')+'"');
 cmds.push('git pull');
 cmds.push('git push');
