@@ -2,7 +2,7 @@
 var cmds = [];
 
 if (process.argv.length < 3) {
-	console.log('Please provide a ommit message!');
+	console.log('Please provide a commit message!');
 	process.exit(-1);
 }
 
