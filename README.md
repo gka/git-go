@@ -1,5 +1,7 @@
 # git-go
 
+<img src="https://i.imgur.com/voVeI5q.png" width="400" >
+
 *git-go* is a short-hand command for doing 
 
 ```
